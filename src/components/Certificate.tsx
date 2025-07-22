@@ -52,7 +52,7 @@ const testimonials = [
     quote: "Check out my latest resume for a detailed overview of my skills, experiences, and projects.",
     name: "Portfolio",
     title: "Resume",
-    link: "https://drive.google.com/file/d/1tpIy4wrLUDCDwxS3wt2Xx-O_LC4-Lxsu/view",
+    link: "https://drive.google.com/file/d/1j8C7c7zlpTpOHqVVnwRELDK0mQ26RhbH/view?usp=sharing",
   },
 ];
 
