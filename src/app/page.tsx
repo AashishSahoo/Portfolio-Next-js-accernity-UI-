@@ -1,4 +1,3 @@
-import AboutMe from "@/components/AboutMe";
 import { Certificate } from "@/components/Certificate";
 import { Education } from "@/components/Education";
 import Footer from "@/components/Footer";

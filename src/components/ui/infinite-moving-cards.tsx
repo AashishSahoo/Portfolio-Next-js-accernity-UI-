@@ -95,7 +95,7 @@ export const InfiniteMovingCards = ({
             pauseOnHover && "hover:[animation-play-state:paused]",
           )}
         >
-          {items.map((item, idx) => (
+          {items.map((item) => (
             <li
               onClick={() => item.link && window.open(item.link, "_blank")}
 

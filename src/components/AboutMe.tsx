@@ -2,37 +2,37 @@
 import React from "react";
 
 import ProfileCard from '@/components/ProfileCard/ProfileCard'
-import GlassIcons from "@/components/GlassIcons/GlassIcons"
+// import GlassIcons from "@/components/GlassIcons/GlassIcons"
 
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
 import { LinkPreviewDemo } from "../components/AboutMe/LinkPreviewDemo";
 
-const items = [
-  {
-    icon: <Icon icon="circum:linkedin" width="32" height="32" />,
-    color: 'blue',
-    label: 'Linkedin',
-    urls: "https://linkedin.com/in/rohit-kumar-chaurasia-220742243"
-  },
-  {
-    icon: <Icon icon="hugeicons:github-01" width="32" height="32" />,
-    color: 'purple',
-    label: 'Github',
-    urls: "https://github.com/Rohit8953",
-  },
-  {
-    icon: <Icon icon="pajamas:twitter" width="32" height="32" />,
-    color: 'indigo',
-    label: 'Twitter',
-    urls: "https://x.com/Rohitch82888068"
-  },
-  {
-    icon: <Icon icon="prime:instagram" width="32" height="32" />,
-    color: 'red',
-    label: 'Instagram',
-    urls: "https://www.instagram.com/rohitchaurasia2452/"
-  },
-];
+// const items = [
+//   {
+//     icon: <Icon icon="circum:linkedin" width="32" height="32" />,
+//     color: 'blue',
+//     label: 'Linkedin',
+//     urls: "https://linkedin.com/in/rohit-kumar-chaurasia-220742243"
+//   },
+//   {
+//     icon: <Icon icon="hugeicons:github-01" width="32" height="32" />,
+//     color: 'purple',
+//     label: 'Github',
+//     urls: "https://github.com/Rohit8953",
+//   },
+//   {
+//     icon: <Icon icon="pajamas:twitter" width="32" height="32" />,
+//     color: 'indigo',
+//     label: 'Twitter',
+//     urls: "https://x.com/Rohitch82888068"
+//   },
+//   {
+//     icon: <Icon icon="prime:instagram" width="32" height="32" />,
+//     color: 'red',
+//     label: 'Instagram',
+//     urls: "https://www.instagram.com/rohitchaurasia2452/"
+//   },
+// ];
 
 const AboutMe = () => {
   return (

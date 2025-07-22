@@ -12,6 +12,8 @@ import {
 
 import { cn } from "@/lib/utils";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 type LinkPreviewProps = {
   children: React.ReactNode;
   url: string;
@@ -24,6 +26,7 @@ type LinkPreviewProps = {
     | { isStatic: true; imageSrc: string }
     | { isStatic?: false; imageSrc?: never }
   );
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 
 export const LinkPreview = ({
   children,
@@ -31,8 +34,6 @@ export const LinkPreview = ({
   className,
   width = 200,
   height = 125,
-  quality = 50,
-  layout = "fixed",
   isStatic = false,
   imageSrc = "",
 }: LinkPreviewProps) => {
@@ -67,8 +68,8 @@ export const LinkPreview = ({
 
   const translateX = useSpring(x, springConfig);
 
-  const handleMouseMove = (event: any) => {
-    const targetRect = event.target.getBoundingClientRect();
+  const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
+    const targetRect = (event.currentTarget as HTMLElement).getBoundingClientRect();
     const eventOffsetX = event.clientX - targetRect.left;
     const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2; // Reduce the effect to make it subtle
     x.set(offsetFromCenter);

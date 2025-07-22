@@ -73,29 +73,30 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 }) => {
   const wrapRef = useRef<HTMLDivElement>(null);
 
-  interface AnimationHandlers {
-    updateCardTransform: (
-      offsetX: number,
-      offsetY: number,
-      card: HTMLElement,
-      wrap: HTMLElement
-    ) => void;
-    createSmoothAnimation: (
-      duration: number,
-      startX: number,
-      startY: number,
-      card: HTMLElement,
-      wrap: HTMLElement
-    ) => void;
-    cancelAnimation: () => void;
-  }
+  // interface AnimationHandlers {
+  //   updateCardTransform: (
+  //     offsetX: number,
+  //     offsetY: number,
+  //     card: HTMLElement,
+  //     wrap: HTMLElement
+  //   ) => void;
+  //   createSmoothAnimation: (
+  //     duration: number,
+  //     startX: number,
+  //     startY: number,
+  //     card: HTMLElement,
+  //     wrap: HTMLElement
+  //   ) => void;
+  //   cancelAnimation: () => void;
+  // }
 
-  interface CardStyle extends React.CSSProperties {
-    "--icon"?: string;
-    "--grain"?: string;
-    "--behind-gradient"?: string;
-    "--inner-gradient"?: string;
-  }
+  // interface CardStyle extends React.CSSProperties {
+  //   "--icon"?: string;
+  //   "--grain"?: string;
+  //   "--behind-gradient"?: string;
+  //   "--inner-gradient"?: string;
+  // }
+
   const cardRef = useRef<HTMLDivElement>(null);
 
   const animationHandlers = useMemo(() => {
@@ -137,8 +138,8 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 
     const createSmoothAnimation = (
       duration: number,
-      startX: any,
-      startY: any,
+      startX: number,
+      startY: number,
       card: HTMLElement,
       wrap: HTMLElement
     ) => {
@@ -206,7 +207,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   }, [animationHandlers]);
 
   const handlePointerLeave = useCallback(
-    (event: { offsetX: any; offsetY: any; }) => {
+    (event: PointerEvent) => {
       const card = cardRef.current;
       const wrap = wrapRef.current;
 
